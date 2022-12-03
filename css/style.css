@@ -1,0 +1,59 @@
+/* CSS Document */
+body {
+    font:12px arial;
+    color: #222;
+    padding:35px;
+    background-color: white;
+}
+div.Main {
+    width: 100%;
+}
+.header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: left;
+}
+.lien {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.lien a {
+    float: left;
+    display: inline;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+/* Change color on hover */
+.lien a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* gestion de l'image défilante */
+.defilement{
+    overflow: hidden;
+    margin: 50px auto;
+    box-shadow: 0px 15px 10px -5px #777;
+}
+.picture{
+    width: 3840px;
+    height: 600px;
+    background-color: #EDEDED;
+    background-image: url("./img/livraisonCamion.jpg");
+    background-size: contain;
+    animation: defilement 15s linear infinite;
+}
+@keyframes defilement{
+    0%{transform: translate(0,0);}
+    100%{transform: translate(-75%,0);}
+}
+.footer{
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+}
